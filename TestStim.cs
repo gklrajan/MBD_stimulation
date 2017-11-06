@@ -1082,8 +1082,8 @@ namespace Grab
                                         varSender.blobDist * (float)Math.Cos(varSender.lockAngle + varSender.adtlAngle + Math.PI);
 
                                     for (int a = 0; a < 20; a++)
-                                        Dblob.Write(new CustomVertex.PositionColored(xBlob + (float)(blobRdub * Math.Cos(2 * a * Math.PI / 20)), yBlob + (float)(blobRdub * Math.Sin(2.0 * a * Math.PI / 20)), 0, blobClr));
-
+                                        Dblob.Write(new CustomVertex.PositionColored(xBlob + (float)(blobRnext * Math.Cos(2 * a * Math.PI / 20)), yBlob + (float)(blobRnext * Math.Sin(2.0 * a * Math.PI / 20)), 0, blobClr));
+                                    //11 Nov 2017 blobRdub to blobRnext
                                     vertices.Unlock();
                                     device.SetStreamSource(0, vertices, 0);
                                     device.VertexFormat = CustomVertex.PositionColored.Format;
