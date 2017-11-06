@@ -1089,7 +1089,7 @@ namespace Grab
                                     device.VertexFormat = CustomVertex.PositionColored.Format;
                                     device.DrawPrimitives(PrimitiveType.TriangleFan, 0, 18);
                                     // device.EndScene();
-                                    //device.Present();
+                                    ////device.Present();
                                 }
                             }
 
