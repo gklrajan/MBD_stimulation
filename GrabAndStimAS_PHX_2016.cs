@@ -1603,6 +1603,7 @@ namespace Grab
         static bool IsTimeForStim(int x, int y)
         {
             return !((int)Math.Sqrt((x - circH) * (x - circH) + (y - circK) * (y - circK)) < 400); //Unmtil; 25Mar14, has always been 200 R
+                                                                                                   //11 Nov 2017 : 400 R - only for troubleshooting purposes
         }
 
        
@@ -2197,7 +2198,7 @@ namespace Grab
                         BlobDelay.Reset();
                         BlobDelay.Start();
                         // blobFlash = true;
-                         doubleBlob = true;
+                         doubleBlob = true; // 11 Nov 2017 uncommented for testing doubleBlob
 
 
                     }
@@ -2208,7 +2209,7 @@ namespace Grab
                         StartShowFlash = false;
 
                         blobFlash = false;
-                        doubleBlob = true;
+                        doubleBlob = true; // 11 Nov 2017 uncommented for testing doubleBlob
                         halfBlob = false;
                         shrinking = false;
                         annulus = false;
